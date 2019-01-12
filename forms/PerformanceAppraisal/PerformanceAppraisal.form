@@ -1,0 +1,95 @@
+{
+    "id": "performanceappraisal",
+    "name": "PerformanceAppraisal",
+    "revision": "dev",
+    "readOnly": false,
+    "content": [
+        {
+            "id": "employee_details",
+            "type": "section",
+            "title": "Employee Details",
+            "content": [
+                {
+                    "id": "employee_id",
+                    "type": "string",
+                    "label": "Employee Id",
+                    "readOnly": true,
+                    "value": "${context.employeeId}",
+                    "constraints": {
+                        "required": false
+                    }
+                },
+                {
+                    "id": "employee_name",
+                    "type": "string",
+                    "label": "Employee Name",
+                    "readOnly": true,
+                    "value": "${context.employeeName}",
+                    "constraints": {
+                        "required": false
+                    }
+                },
+                {
+                    "id": "designation",
+                    "type": "string",
+                    "label": "Designation",
+                    "readOnly": true,
+                    "value": "${context.employeeDesignation}",
+                    "constraints": {
+                        "required": false
+                    }
+                },
+                {
+                    "id": "year",
+                    "type": "string",
+                    "label": "Year",
+                    "readOnly": true,
+                    "value": "${context.year}",
+                    "constraints": {
+                        "required": false
+                    }
+                },
+                {
+                    "id": "goals",
+                    "type": "string",
+                    "label": "Goals",
+                    "readOnly": false,
+                    "value": "${context.goals}",
+                    "constraints": {
+                        "required": false
+                    }
+                }
+            ]
+        },
+        {
+            "id": "comments",
+            "type": "section",
+            "title": "Comments",
+            "content": [
+                {
+                    "id": "approver_comments",
+                    "type": "string",
+                    "label": "Approver Comments",
+                    "placeholder": "Enter Comments",
+                    "readOnly": false,
+                    "value": "${context.approverComments}",
+                    "constraints": {
+                        "required": false
+                    }
+                }
+            ]
+        }
+    ],
+    "decisions": [
+        {
+            "id": "approve",
+            "text": "Approve",
+            "decisionType": "positive"
+        },
+        {
+            "id": "reject",
+            "text": "Reject",
+            "decisionType": "negative"
+        }
+    ]
+}
