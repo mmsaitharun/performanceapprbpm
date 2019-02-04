@@ -62,6 +62,37 @@
 				"key": "formRevision",
 				"value": "dev"
 			}],
+			"customAttributes": [{
+				"id": "Goals",
+				"label": "Goals",
+				"type": "string",
+				"value": "${context.Goals}"
+			}, {
+				"id": "year",
+				"label": "Year",
+				"type": "string",
+				"value": "${context.year}"
+			}, {
+				"id": "employeeDesignation",
+				"label": "Employee Designation",
+				"type": "string",
+				"value": "${context.employeeDesignation}"
+			}, {
+				"id": "employeeName",
+				"label": "Employee Name",
+				"type": "string",
+				"value": "${context.employeeName}"
+			}, {
+				"id": "employeeId",
+				"label": "Employee Id",
+				"type": "string",
+				"value": "${context.employeeId}"
+			}, {
+				"id": "requestId",
+				"label": "Request Id",
+				"type": "string",
+				"value": "${context.requestId}"
+			}],
 			"id": "usertask1",
 			"name": "Performance Appraisal Task",
 			"dueDateRef": "da433e81-2cf4-4852-9e3c-a79f4ed1431d"
